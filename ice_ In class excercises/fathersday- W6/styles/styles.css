@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #f8ede3, #f0ece2, #e4dccf);
+  color: #3d3d3d;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+header {
+  background: transparent;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(100, 100, 100, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #37474f;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a::after {
+  content: '';
+  height: 2px;
+  background: #8eacbb;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+main {
+  margin-top: 40px;
+}
+
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #005f73, #0a9396);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+
+main img {
+  display: block;
+  margin: 0 auto 60px;
+  max-width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin: 60px 0;
+  padding: 40px 0;
+  background: linear-gradient(145deg, #e8f0f2, #ffffff);
+  border-radius: 60px 0 60px 0;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #0a9396;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+  font-weight: bold;
+  background: linear-gradient(to right, #94d2bd, #cce3dc);
+  color: #222;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
